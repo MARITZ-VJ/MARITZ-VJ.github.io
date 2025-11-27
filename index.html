@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vukona Maritz Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+<!-- EmailJS + Script -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>emailjs.init('jEsOTEHyZsXGMysZW');</script>
+<script src="js/script.js" defer></script>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="nav-logo">VJ MARITZ</div>
+    <div class="nav-right">
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button id="darkToggle" class="dark-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <div class="hamburger" id="hamburger" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-full">
+    <div class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="assets/icons/skills.webm" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <h2>Hello, I'm</h2>
+    <h1>Vukona Maritz</h1>
+    <p id="typedText" class="typed-text"></p>
+
+    <div class="hero-buttons">
+        <a href="assets/docs/Vukona_Maritz_CV.pdf" download class="btn">
+            <i class="fas fa-download"></i> Download CV
+        </a>
+        <a href="#contact" class="btn alt">
+            <i class="fas fa-envelope"></i> Contact
+        </a>
+        <a href="#projects" class="btn">
+            <i class="fas fa-code"></i> View Projects
+        </a>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://github.com/MARITZ-VJ" target="_blank" aria-label="GitHub" title="GitHub Profile">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="http://www.linkedin.com/in/vukona-jubby-maritz" target="_blank" aria-label="LinkedIn"
+           title="LinkedIn Profile">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/jubbyvukona.maritz" target="_blank" aria-label="Facebook"
+           title="Facebook Profile">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/0660400870" target="_blank" aria-label="WhatsApp" title="WhatsApp Contact">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue">
+        <i class="fas fa-chevron-down"></i>
+        <span>Scroll Down</span>
+    </div>
+</header>
+
+<!-- About Section -->
+<section class="about-education">
+    <div class="about-card">
+        <h2>About Me</h2>
+        <p>
+            I’m Vukona Jubby Maritz, I’ve completed my 3‑year Diploma in Information Technology at Vaal University of
+            Technology and will officially graduate in March/April 2026. My studies have given me a strong foundation in
+            coding, networking, cloud infrastructure, databases, and cybersecurity, and I’m actively looking for
+            opportunities to grow as a developer in a team that values clean code, collaboration, and continuous
+            learning.
+        </p>
+    </div>
+    <!-- Education -->
+    <h2>Education</h2><br>
+    <div class="education-grid">
+        <div class="education-card">
+            <h4>Diploma in Information Technology</h4>
+            <p>Vaal University of Technology (2023–2025)</p>
+        </div>
+        <div class="education-card">
+            <h4>National Senior Certificate</h4>
+            <p>Malamule High School (2022)</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Certifications Flip Cards Section -->
+<section class="certifications-flip">
+    <h2>🎓 Certifications</h2>
+    <div class="flip-grid">
+
+        <!-- FNB Full Stack -->
+        <div class="flip-card fnb-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="assets/icons/fnb.png" alt="FNB Logo">
+                    <h4>FNB App Academy: Full Stack Development</h4>
+                </div>
+                <div class="flip-back">
+                    <span class="cert-date"> 22 July 2025</span>
+                    <a href="assets/certificates/FNB App Academy.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Oracle Foundations -->
+        <div class="flip-card oracle-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="assets/icons/oracle.png" alt="Oracle Logo">
+                    <h4>OCI 2025 Foundations Associate</h4>
+                </div>
+                <div class="flip-back">
+                    <span class="cert-date">29 October 2025</span>
+                    <a href="assets/certificates/OCI 2025 Foundations Associate.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Oracle Generative AI -->
+        <div class="flip-card oracle-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="assets/icons/oracle.png" alt="Oracle Logo">
+                    <h4>OCI 2025 Generative AI Professional</h4>
+                </div>
+                <div class="flip-back">
+                    <span class="cert-date">29 October 2025</span>
+                    <a href="assets/certificates/OCI%202025%20Generative%20AI%20Professional.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Oracle Networking -->
+        <div class="flip-card oracle-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="assets/icons/oracle.png" alt="Oracle Logo">
+                    <h4>OCI 2025 Networking Professional</h4>
+                </div>
+                <div class="flip-back">
+                    <span class="cert-date">10 November 2025</span>
+                    <a href="assets/certificates/OCI%202025%20Networking%20Professional.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cisco IT Essentials -->
+        <div class="flip-card cisco-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="assets/icons/cisco.png" alt="Cisco Logo">
+                    <h4>Cisco IT Essentials</h4>
+                </div>
+                <div class="flip-back">
+                    <span class="cert-date"> 18 July 2023</span>
+                    <a href="assets/certificates/Cisco%20IT%20Essentials.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cisco Cybersecurity -->
+        <div class="flip-card cisco-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="assets/icons/cisco.png" alt="Cisco Logo">
+                    <h4>Cisco Cybersecurity Introduction</h4>
+                </div>
+                <div class="flip-back">
+                    <span class="cert-date"> 31 October 2023</span>
+                    <a href="assets/certificates/Cisco%20Cybersecurity%20Introduction.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cisco CCNAv7 Switching -->
+        <div class="flip-card cisco-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="assets/icons/cisco.png" alt="Cisco Logo">
+                    <h4>Cisco CCNAv7: Switching & Routing</h4>
+                </div>
+                <div class="flip-back">
+                    <span class="cert-date"> 19 July 2024</span>
+                    <a href="assets/certificates/Cisco%20CCNAv7-%20Swtching%20&%20Routing.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cisco CCNAv7 Networking Fundamentals -->
+        <div class="flip-card cisco-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="assets/icons/cisco.png" alt="Cisco Logo">
+                    <h4>Cisco CCNAv7: Networking Fundamentals</h4>
+                </div>
+                <div class="flip-back">
+                    <span class="cert-date"> 06 December 2023</span>
+                    <a href="assets/certificates/Cisco%20CCNAv7%20-%20Networking%20Fundamentals.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Skills Development & Training -->
+<section id="skills-training" class="section">
+    <h2>Skills Development & Training</h2>
+    <div class="training-grid">
+        <div class="training-card">
+            <h3>💻 Full Stack Developer Trainee</h3>
+            <p><strong>FNB App Academy 2025</strong></p>
+            <ul>
+                <li>React, Firebase, Tailwind CSS, REST APIs</li>
+                <li>Agile development, Git version control</li>
+                <li>Deployment workflows and team collaboration</li>
+            </ul>
+        </div>
+        <div class="training-card">
+            <h3>🌐 Cisco Networking Student</h3>
+            <p><strong>Cisco Networking Academy 2023 - 2024</strong></p>
+            <ul>
+                <li>CCNAv7: Routing, Switching, Wireless Essentials</li>
+                <li>Cybersecurity fundamentals</li>
+                <li>PC hardware and software essentials</li>
+            </ul>
+        </div>
+        <div class="training-card">
+            <h3>☁️ Oracle Cloud Infrastructure</h3>
+            <p><strong>Oracle Certified 2025</strong></p>
+            <ul>
+                <li>Generative AI tools and deployment workflows</li>
+                <li>Cloud architecture, virtual networks, and security</li>
+                <li>IAM, compute, and storage services</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+    <h2>Skills & Tools</h2>
+    <div class="skills-badges">
+        <span class="badge">Java</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+        <span class="badge">React</span>
+        <span class="badge">Tailwind CSS</span>
+        <span class="badge">Firebase</span>
+        <span class="badge">Git & GitHub</span>
+        <span class="badge">SQL & PL/SQL</span>
+        <span class="badge">Node.js</span>
+        <span class="badge">Python</span>
+        <span class="badge">PHP</span>
+        <span class="badge">VB.Net</span>
+        <span class="badge">JSON</span>
+        <span class="badge">Oracle Cloud Infrastructure</span>
+        <span class="badge">Microsoft Azure</span>
+        <span class="badge">REST APIs</span>
+        <span class="badge">Agile</span>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <p class="projects-intro">
+        Here are some of the projects I’ve built to solve real-world problems using Java, Python, cloud tools, and
+        modern web technologies. Each one reflects my focus on clean code, practical design, and continuous learning.
+    </p>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> All</button>
+        <button class="filter-btn" data-filter="web"><i class="fas fa-code"></i> Web Apps</button>
+        <button class="filter-btn" data-filter="js"><i class="fab fa-js-square"></i> JavaScript Projects</button>
+        <button class="filter-btn" data-filter="java"><i class="fab fa-java"></i> Java Projects</button>
+        <button class="filter-btn" data-filter="python"><i class="fab fa-python"></i> Python Projects</button>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="projects-grid">
+        <!-- StockWise AI -->
+        <div class="project-card" data-category="python">
+            <h3>StockWise AI</h3>
+            <div class="card-slider">
+                <img src="assets/images/screenshots/stockwise1.jpg" alt="StockWise AI Screenshot 1" class="active">
+                <img src="assets/images/screenshots/stockwise2.jpg" alt="StockWise AI Screenshot 2">
+                <img src="assets/images/screenshots/stockwise3.jpg" alt="StockWise AI Screenshot 3">
+            </div>
+            <p>AI-powered inventory optimization system for South African SME retailers.</p>
+            <button class="btn open-modal" data-modal="modal-stockwise">View Project</button>
+        </div>
+
+        <!-- Product Sales App -->
+        <div class="project-card" data-category="java">
+            <h3>Product Sales App</h3>
+            <div class="card-slider">
+                <img src="assets/images/screenshots/sales1.jpg" alt="Product Sales Screenshot 1" class="active">
+                <img src="assets/images/screenshots/product1.jpg" alt="Product Sales Screenshot 2">
+                <img src="assets/images/screenshots/sales3.webp" alt="Product Sales Screenshot 3">
+            </div>
+            <p>Desktop Java Swing application for managing product sales.</p>
+            <button class="btn open-modal" data-modal="modal-sales">View Project</button>
+        </div>
+
+        <!-- Property Management System -->
+        <div class="project-card" data-category="java">
+            <h3>Property Management System</h3>
+            <div class="card-slider">
+                <img src="assets/images/screenshots/property1.jpg" alt="Property Management Screenshot 1"
+                     class="active">
+                <img src="assets/images/screenshots/property-2.webp" alt="Property Management Screenshot 2">
+                <img src="assets/images/screenshots/property-3.webp" alt="Property Management Screenshot 3">
+            </div>
+            <p>Java-based system with loan calculation, commission tracking.</p>
+            <button class="btn open-modal" data-modal="modal-property">View Project</button>
+        </div>
+    </div>
+</section>
+
+<!-- Modals -->
+<!-- StockWise AI Modal -->
+<div id="modal-stockwise" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>StockWise AI</h3>
+
+        <!-- Slider -->
+        <div class="slider">
+            <div class="slides">
+                <img src="assets/images/screenshots/stockwise1.jpg" alt="StockWise AI Screenshot 1">
+                <img src="assets/images/screenshots/stockwise2.jpg" alt="StockWise AI Screenshot 2">
+                <img src="assets/images/screenshots/stockwise3.jpg" alt="StockWise AI Screenshot 3">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <!-- Overview -->
+        <div class="project-overview">
+            <h4>Overview</h4>
+            <p>
+                StockWise AI helps SME retailers reduce stockouts and overstocking by forecasting demand with machine
+                learning models.
+                It integrates seamlessly with inventory systems and provides actionable insights via a chatbot
+                interface.
+            </p>
+        </div>
+
+        <!-- Features -->
+        <div class="project-features">
+            <h4>Key Features</h4>
+            <p>Demand forecasting using LightGBM, XGBoost, ARIMA, and LSTM</p>
+            <p>Chatbot interface for real-time queries</p>
+            <p>Inventory optimization dashboard</p>
+            <p>SQLite database for lightweight persistence</p>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="project-tech">
+            <h4>Tech Stack</h4>
+            <p>Python, Pandas, Scikit-learn, Flask, SQLite</p>
+        </div>
+
+        <!-- Challenges & Learnings -->
+        <div class="project-learnings">
+            <h4>Challenges & Learnings</h4>
+            <p>
+                Balancing accuracy and performance across multiple forecasting models was a key challenge.<br>
+                I learned to optimize hyperparameters and integrate diverse models into a unified system.
+            </p>
+        </div>
+
+        <!-- Links -->
+        <div class="project-links">
+            <a href="https://github.com/BAnalysis-3-2/StockWise-AI" class="btn" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Product Sales App Modal -->
+<div id="modal-sales" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Product Sales App</h3>
+
+        <!-- Slider -->
+        <div class="slider">
+            <div class="slides">
+                <img src="assets/images/screenshots/sales1.jpg" alt="Product Sales Screenshot 1">
+                <img src="assets/images/screenshots/product1.jpg" alt="Product Sales Screenshot 2">
+                <img src="assets/images/screenshots/sales3.webp" alt="Product Sales Screenshot 3">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <!-- Overview -->
+        <div class="project-overview">
+            <h4>Overview</h4>
+            <p>
+                A desktop Java Swing application for managing product sales, designed to simplify inventory and
+                transaction tracking.
+                Built with NetBeans and MySQL for robust data management.
+            </p>
+        </div>
+
+        <!-- Features -->
+        <div class="project-features">
+            <h4>Key Features</h4>
+            <p>Product catalog management</p>
+            <p>Sales transaction recording</p>
+            <p>Customer database integration</p>
+            <p>Reports and analytics</p>
+
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="project-tech">
+            <h4>Tech Stack</h4>
+            <p>Java, Swing, MySQL, NetBeans</p>
+        </div>
+
+        <!-- Challenges & Learnings -->
+        <div class="project-learnings">
+            <h4>Challenges & Learnings</h4>
+            <p>
+                Designing a user-friendly interface with Swing required careful layout planning.<br>
+                I learned to structure database queries efficiently to improve performance.
+            </p>
+        </div>
+
+        <!-- Links -->
+        <div class="project-links">
+            <a href="https://github.com/vukona-dev/product-sales-java" class="btn" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Property Management System Modal -->
+<div id="modal-property" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Property Management System</h3>
+
+        <!-- Slider -->
+        <div class="slider">
+            <div class="slides">
+                <img src="assets/images/screenshots/property1.jpg" alt="Property Management Screenshot 1">
+                <img src="assets/images/screenshots/property-2.webp" alt="Property Management Screenshot 2">
+                <img src="assets/images/screenshots/property-3.webp" alt="Property Management Screenshot 3">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <!-- Overview -->
+        <div class="project-overview">
+            <h4>Overview</h4>
+            <p>
+                A Java-based system for managing property sales, loans, and commissions.
+                Implements a three-tier architecture with object stream persistence for reliability.
+            </p>
+        </div>
+        <br>
+        <!-- Features -->
+        <div class="project-features">
+            <h4>Key Features</h4>
+            <p>Loan calculation module</p>
+            <p>Commission tracking for agents</p>
+            <p>Property listing management</p>
+            <p>GUI interface with Swing</p>
+        </div>
+        <br>
+        <!-- Tech Stack -->
+        <div class="project-tech">
+            <h4>Tech Stack</h4>
+            <p>Java, Swing, MySQL</p>
+        </div>
+        <br>
+        <!-- Challenges & Learnings -->
+        <div class="project-learnings">
+            <h4>Challenges & Learnings</h4>
+            <p>
+                Implementing three-tier architecture taught me how to separate concerns effectively.<br>
+                I also learned how to persist objects using streams for lightweight storage.
+            </p>
+        </div>
+
+        <!-- Links -->
+        <div class="project-links">
+            <a href="https://github.com/vukona-dev/property-management-java" class="btn" target="_blank">View on
+                GitHub</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p class="contact-intro">
+        I’m open to opportunities in software development and collaborations. Feel free to reach out!
+    </p>
+
+    <!-- Contact Form -->
+    <form id="contact-form" class="contact-form">
+        <div class="form-group">
+            <input type="text" name="user_name" placeholder="Your Name" required/>
+        </div>
+        <div class="form-group">
+            <input type="email" name="user_email" placeholder="Your Email" required/>
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn" id="sendBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-spinner" style="display:none;"></span>
+        </button>
+        <p class="form-status"></p>
+    </form>
+
+    <!-- CV Download Button -->
+    <a href="assets/docs/Vukona_Maritz_CV.pdf" download class="btn">Download CV</a>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 Vukona Maritz. All rights reserved.</p>
+</footer>
+
+<!-- Scroll-to-top Button -->
+<button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">↑</button>
+</body>
+</html>
