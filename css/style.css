@@ -22,7 +22,7 @@ body {
     --secondary-accent: #f59e0b;
     --nav-bg: #f9fafb;
     --light-gray: gray;
-    --dark-gray: #48545a;
+    --dark-gray: #8ea8b3;
 }
 
 body.dark {
@@ -34,7 +34,7 @@ body.dark {
     --secondary-accent: #fbbf24;
     --nav-bg: #1f2937;
     --light-gray: #a7b5d3;
-    --dark-gray: #48545a;
+    --dark-gray: #455255;
 }
 
 /* 📦 Section Layout + Scroll Animation */

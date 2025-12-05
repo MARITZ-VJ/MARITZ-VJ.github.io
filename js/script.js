@@ -21,10 +21,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 icon.classList.add('fa-moon');
             }
         });
-    } // ⌨️ Rotating Typing Animation for Multiple Roles with Fade-in
+    }
+
+    // ⌨️ Rotating Typing Animation for Multiple Roles with Fade-in
     const typedText = document.getElementById('typedText');
     if (typedText) {
-        const roles = ["Full Stack Developer", "Cloud Enthusiast", "UI/UX Designer", "Problem Solver", "Team Player", "Innovator"];
+        const roles = [
+            "Full-Stack Developer",
+            "Java Developer",
+            "Network Admin",
+            "Cloud Enthusiast",
+            "Security Analyst",
+            "Database & Data Analyst",
+            "UI/UX Designer",
+            "Problem Solver",
+            "Business Analyst",
+            "Tech Enthusiast",
+            "Innovator",
+            "Management & Leadership"
+        ];
+
         let roleIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -57,7 +73,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         type();
-    } // ⬆️ Scroll-to-Top Button
+    }
+
+    // ⬆️ Scroll-to-Top Button
     const scrollBtn = document.getElementById('scrollTopBtn');
     if (scrollBtn) {
         window.addEventListener('scroll', () => {
