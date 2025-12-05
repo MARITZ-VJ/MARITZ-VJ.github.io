@@ -382,7 +382,7 @@ body.dark .social-icons a:hover {
 .flip-grid {
     margin-top: 2rem;
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
 }
@@ -503,6 +503,10 @@ body.dark .flip-front {
 @media (max-width: 1024px) {
     .flip-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    }
+    .certifications-flip {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
 
